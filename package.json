@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/xaster-Kies/reddit-cli/issues"
   },
-  "homepage": "https://github.com/xaster-Kies/reddit-cli#readme"
+  "homepage": "https://github.com/xaster-Kies/reddit-cli#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "open": "^8.2.1",
+    "yargs": "^17.1.1"
+  }
 }

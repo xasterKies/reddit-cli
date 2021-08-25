@@ -1,3 +1,21 @@
-#! /usr/bin/env Node
+#! /usr/bin/env node
+import fetch from "node-fetch";
+import open from "open";
+import yargs from "yargs";
 
-console.log('Hello from reddit cli')
+const { argv } = yargs(process.argv);
+
+const res = await fetch('https://reddit.com/.json');
+const data = await res.json();
+const children = data.data.children;
+const randomPost =  [Math.floor(Math.random() * children.length)];
+const link = `https://reddit.com${randomPost.data.selftext}`;
+
+if (argv.print) {
+    console.log(`
+        title: ${randomPost.data.title}
+        link: ${link}
+    `)
+} else {
+    open(link)
+}
