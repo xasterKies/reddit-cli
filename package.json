@@ -1,0 +1,23 @@
+{
+  "name": "reddit-cli",
+  "version": "1.0.0",
+  "description": "A NodeJS CLI that interacts with reddit Developer API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "reddit": "./reddit.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xaster-Kies/reddit-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xaster-Kies/reddit-cli/issues"
+  },
+  "homepage": "https://github.com/xaster-Kies/reddit-cli#readme"
+}
